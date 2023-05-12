@@ -37,3 +37,7 @@ public long mostPoints(int[][] questions) {
         memo.put(i, maxPoints);
         return maxPoints;
     }
+
+// In this optimized version, a HashMap called memo is used to store previously calculated results. Before performing a calculation for a specific i value, the code checks if the result is already available in the memo map. If it is, the stored result is returned directly, avoiding unnecessary calculations.
+
+// This memoization technique helps to reduce redundant recursive calls and improves the overall performance of the code.
